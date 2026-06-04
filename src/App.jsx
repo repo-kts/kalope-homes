@@ -216,8 +216,8 @@ export default function App() {
 
           <p className="contact">
             <span className="contact__label">Enquiries</span>
-            <a className="contact__link" href="tel:+918271293308">
-              +91 82712 93308
+            <a className="contact__link" href="tel:+918292936727">
+              +91 82929 36727
             </a>
           </p>
         </motion.div>

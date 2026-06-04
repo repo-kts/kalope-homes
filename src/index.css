@@ -1,12 +1,14 @@
 :root {
-  --cream: #f3ece1;
-  --cream-dim: rgba(243, 236, 225, 0.66);
-  --cream-faint: rgba(243, 236, 225, 0.4);
-  --ink: #16120e;
-  --brass: #c79a5b;
-  --brass-soft: rgba(199, 154, 91, 0.9);
-  --brand-orange: #e8730c;
-  --brand-teal: #12898a;
+  --cream: #eef5f6;
+  --cream-dim: rgba(238, 245, 246, 0.72);
+  --cream-faint: rgba(238, 245, 246, 0.45);
+  --ink: #07232a;
+  --orange: #f47c1b;
+  --orange-soft: rgba(244, 124, 27, 0.9);
+  --blue: #1fb1cc;
+  --blue-soft: rgba(31, 177, 204, 0.9);
+  --brand-orange: #f47c1b;
+  --brand-teal: #1fb1cc;
 
   --display: 'Fraunces', Georgia, serif;
   --sans: 'Jost', -apple-system, sans-serif;
@@ -63,8 +65,9 @@ body {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(120% 80% at 50% 48%, rgba(15, 12, 9, 0.78) 0%, rgba(15, 12, 9, 0.55) 45%, rgba(15, 12, 9, 0.72) 100%),
-    linear-gradient(180deg, rgba(15, 12, 9, 0.7) 0%, rgba(15, 12, 9, 0.45) 40%, rgba(15, 12, 9, 0.55) 70%, rgba(15, 12, 9, 0.9) 100%);
+    radial-gradient(120% 90% at 78% 12%, rgba(244, 124, 27, 0.16) 0%, transparent 45%),
+    radial-gradient(120% 80% at 50% 48%, rgba(6, 28, 34, 0.78) 0%, rgba(6, 28, 34, 0.52) 45%, rgba(6, 28, 34, 0.72) 100%),
+    linear-gradient(180deg, rgba(6, 26, 32, 0.7) 0%, rgba(6, 26, 32, 0.42) 40%, rgba(6, 26, 32, 0.55) 70%, rgba(5, 22, 27, 0.92) 100%);
 }
 .grain {
   position: absolute;
@@ -128,13 +131,13 @@ body {
   font-size: 0.72rem;
   letter-spacing: 0.32em;
   text-transform: uppercase;
-  color: var(--brass);
+  color: var(--blue);
   margin-bottom: 1.1rem;
 }
 .eyebrow__line {
   width: 38px;
   height: 1px;
-  background: var(--brass);
+  background: var(--blue);
 }
 .headline {
   font-family: var(--display);
@@ -149,7 +152,7 @@ body {
   display: block;
   font-style: italic;
   font-weight: 400;
-  color: var(--brass);
+  color: var(--orange);
   text-shadow: 0 2px 40px rgba(0, 0, 0, 0.5);
 }
 .lede {
@@ -211,16 +214,16 @@ body {
   display: flex;
   gap: 0.5rem;
   align-items: center;
-  border: 1px solid rgba(243, 236, 225, 0.35);
+  border: 1px solid rgba(31, 177, 204, 0.4);
   border-radius: 100px;
   padding: 0.4rem 0.4rem 0.4rem 1.4rem;
-  background: rgba(22, 18, 14, 0.55);
+  background: rgba(6, 28, 34, 0.55);
   backdrop-filter: blur(10px);
   flex-wrap: wrap;
   transition: border-color 0.3s ease;
 }
 .signup__form:focus-within {
-  border-color: var(--brass-soft);
+  border-color: var(--blue-soft);
 }
 .signup__input {
   flex: 1;
@@ -241,8 +244,8 @@ body {
   align-items: center;
   gap: 0.5rem;
   border: none;
-  background: var(--brass);
-  color: var(--ink);
+  background: var(--orange);
+  color: #fff;
   font-family: var(--sans);
   font-weight: 500;
   font-size: 0.82rem;
@@ -255,7 +258,7 @@ body {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 .signup__btn:hover {
-  background: var(--cream);
+  background: var(--blue);
   transform: translateY(-1px);
 }
 .signup__arrow {
@@ -268,7 +271,7 @@ body {
   font-family: var(--display);
   font-style: italic;
   font-size: 1.25rem;
-  color: var(--brass);
+  color: var(--orange);
   padding: 0.6rem 0;
 }
 
@@ -296,8 +299,8 @@ body {
   transition: color 0.3s ease, border-color 0.3s ease;
 }
 .contact__link:hover {
-  color: var(--brass);
-  border-color: var(--brass);
+  color: var(--orange);
+  border-color: var(--orange);
 }
 
 /* ── Footer: caption + gallery dots ────────────────────── */
@@ -316,7 +319,7 @@ body {
   display: block;
   font-size: 0.66rem;
   letter-spacing: 0.24em;
-  color: var(--brass);
+  color: var(--blue);
   margin-bottom: 0.5rem;
 }
 .caption__label {
@@ -350,7 +353,7 @@ body {
 .dot__fill {
   position: absolute;
   inset: 0;
-  background: var(--brass);
+  background: var(--orange);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.4s ease;
