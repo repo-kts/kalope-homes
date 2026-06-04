@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="KalopeHomes">
+  <circle cx="100" cy="100" r="100" fill="#12898a"/>
+  <!-- K stem -->
+  <polygon points="58,56 86,47 86,151 58,151" fill="#ffffff"/>
+  <!-- K upper arm (white lower triangle) -->
+  <polygon points="86,57 140,104 86,104" fill="#ffffff"/>
+  <!-- K upper arm (orange accent triangle) -->
+  <polygon points="86,57 140,57 140,104" fill="#e8730c"/>
+  <!-- K lower leg -->
+  <polygon points="86,100 110,100 150,151 124,151" fill="#ffffff"/>
+</svg>
